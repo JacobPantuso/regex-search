@@ -10,5 +10,5 @@ echo 'www.jacobpantuso.ca' > CNAME
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:jacobpantuso/regex-search.git master:gh-pages
+git push -f git@github.com:JacobPantuso/regex-search.git master:gh-pages
 cd -
