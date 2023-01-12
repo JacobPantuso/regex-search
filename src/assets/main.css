@@ -1,0 +1,225 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+body, html, #app {
+    font-family: 'SF Pro Display', sans-serif;
+    height: 100%;
+    animation: fadeInAnimation ease 1.0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.desc {
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 0;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.regex-box {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.regex-box:hover {
+    -webkit-box-shadow: 8px 6px 4px -1px rgba(0,0,0,0.69); 
+    box-shadow: 8px 6px 4px -1px rgba(0,0,0,0.69);
+}
+
+.box-name {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.box-name h4 {
+    font-size: 23px;
+    font-weight: 500px;
+}
+
+.box-name i {
+    font-size: 23px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.search-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box .radio {
+    display: flex;
+    margin: auto;
+    gap: 0.5em;
+    margin-top: 10px;
+}
+
+.input[type="checkbox"]:checked {
+    color: green;
+}
+
+.search-box:hover {
+    -webkit-box-shadow: 8px 6px 4px -1px rgba(0,0,0,0.69); 
+    box-shadow: 8px 6px 4px -1px rgba(0,0,0,0.69);
+}
+
+.text-boxes {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+textarea {
+    font-family: 'SF Pro Display', sans-serif;
+    resize: none;
+    border-radius: 5px;
+    border: 3px black solid;
+    padding: 7px;
+}
+
+.btn-reset {
+    color: white;
+    margin: auto; margin-top: 10px;
+    width: 20%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(91, 202, 76);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.match {
+    color: white;
+    margin: 15px;
+    padding: 10px 30px;
+    border: none;
+    background-color: rgb(91, 202, 76);
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+.disabled {
+    background-color: rgb(202, 76, 76);
+    pointer-events: none;
+    border-radius: 0px;
+}
+
+.match:hover {
+    background-color: green;
+}
+
+.result-box {
+    display: none;
+    margin: 20px;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.result-box:hover {
+    -webkit-box-shadow: 8px 6px 4px -1px rgba(27, 217, 128, 0.69); 
+    box-shadow: 8px 6px 4px -1px rgba(27, 217, 128, 0.69);
+}
+
+.result-text {
+    font-family: 'SF Pro Display', sans-serif;
+    resize: none;
+    border-radius: 5px;
+    border: 3px black solid;
+    padding: 7px;
+    width: 412px;
+}
+
+.btn-reset:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: green;
+}
+
+mark {
+    background-color: rgb(186, 255, 186);
+}
+
+.no-match {
+    background-color: rgb(255, 186, 186);
+}
+
+.bug {
+    text-align: center;
+}
+
+.bug .icon {
+    margin-bottom: 10px;
+    color: crimson;
+    font-size: 20px;
+}
+
+.bug a {
+    text-decoration: none;
+    color: crimson;
+}
+
+label {
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: darkgray;
+}
